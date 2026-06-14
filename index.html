@@ -11,12 +11,16 @@
     <button onclick="showScreen('system-studio')">Make System</button>
   </div>
 
-  <div id="planet-studio" class="screen" style="display:none;">
-    <h1>Planet Studio</h1>
-    <p>Draw your planet here!</p>
-    <button onclick="showScreen('menu')">Back to Menu</button>
-  </div>
-
+ <div id="planet-studio" class="screen" style="display:none;">
+  <h1>Planet Studio</h1>
+  <p>Draw your planet below:</p>
+  
+  <canvas id="planetCanvas" width="400" height="400" style="border:2px solid black; cursor:crosshair;"></canvas>
+  
+  <br>
+  <button onclick="showScreen('menu')">Back to Menu</button>
+</div>
+  
   <div id="system-studio" class="screen" style="display:none;">
     <h1>System Studio</h1>
     <p>Add planets to your system!</p>
